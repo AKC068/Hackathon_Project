@@ -5,6 +5,72 @@
         background-color: #3E3E56;
     }
 
+    #main h4 {
+        font-size: 2.5em;
+        color: #00BFA6;
+        text-transform: uppercase;
+        font-weight:700;
+        margin: 0 auto 0.3rem;
+    }
+    #main .section-divider {
+        display: block;
+        width: 60px;
+        height: 2px;
+        background: #fff;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+    }
+    #main .middle {
+        margin: 0 auto;
+        padding-bottom: 70px;
+    }
+    #main .btn-lg {
+        padding: 0.5rem 0.3rem 1rem;
+        align-items: center;
+    }
+    #main .sm-button {
+        padding: 0.5rem 1rem;
+        text-transform:uppercase;
+        cursor: pointer;
+        background-color: #00BFA6;
+        color: #3E3E56;
+        border: 2px solid #00BFA6;
+        font-weight:600;
+        z-index: 100;
+        transition: all 0.35s ease;
+        width: 100%;
+    }
+    #main h5 {
+        color: #00BFA6;
+        text-align: center;
+    }
+    #main a {
+        color: #3E3E56;
+        text-decoration: none;
+    }
+    
+    /* #main h4::after, #main h4::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        height: 2px;
+        margin: 0 auto;
+    }
+    
+    #main h4::before {
+        background: #585874;
+        width: 200px;
+        margin: 0 auto;
+    }
+    
+    #main h4::after {
+        background: #00BFA6;
+        width: 50px;
+        margin: 0 auto;
+    } */
+
+
+
     #contact {
         display: flex;
         justify-content: center;
@@ -187,12 +253,15 @@
         transition: all 0.35s ease;
         width: 100%
     }
-    #contact .sm-button:hover {
-        background-color: #3E3E56;
-        color: #00BFA6;
-        border: 2px solid #00BFA6;
-        font-weight: 500;
+    @media only screen and (min-width: 576px){
+        #contact .sm-button:hover {
+            background-color: #3E3E56;
+            color: #00BFA6;
+            border: 2px solid #00BFA6;
+            font-weight: 500;
+        }
     }
+    
 
     #contact .tab-content {
         padding: 0 1rem;
@@ -256,15 +325,31 @@
     } */
 
 
-    #contact svg#freepik_stories-take-away {
+    #contact svg#freepik_stories-take-away,
+    #contact svg#freepik_stories-online-groceries {
         width: 100%;
         height: 100%;
     }
 
+    #main svg#freepik_stories-paper-map {
+        width: 100%;
+        height: 100%;
+        max-width: 600px;
+        max-height: 600px;
+        margin: 0 auto;
+    }
+
     svg#freepik_stories-take-away:not(.animated) .animable {opacity: 0;}svg#freepik_stories-take-away.animated #freepik--Character--inject-3 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) lightSpeedLeft;animation-delay: 0.4s;opacity: 0}            @keyframes lightSpeedLeft {              from {                transform: translate3d(-50%, 0, 0) skewX(20deg);                opacity: 0;              }              60% {                transform: skewX(-10deg);                opacity: 1;              }              80% {                transform: skewX(2deg);              }              to {                opacity: 1;                transform: translate3d(0, 0, 0);              }            }        .animator-hidden { display: none; }
 
+    svg#freepik_stories-online-groceries:not(.animated) .animable {opacity: 0;}svg#freepik_stories-online-groceries.animated #freepik--Character--inject-15 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) lightSpeedRight;animation-delay: 0.3s;opacity: 0}            @keyframes lightSpeedRight {              from {                transform: translate3d(50%, 0, 0) skewX(-20deg);                opacity: 0;              }              60% {                transform: skewX(10deg);                opacity: 1;              }              80% {                transform: skewX(-2deg);              }              to {                opacity: 1;                transform: translate3d(0, 0, 0);              }            }        .animator-hidden { display: none; }
+
+    /* ===> main <=== */
+
+    svg#freepik_stories-paper-map:not(.animated) .animable {opacity: 0;}svg#freepik_stories-paper-map.animated #freepik--character-2--inject-12 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) lightSpeedRight;animation-delay: 0.3s;opacity: 0}svg#freepik_stories-paper-map.animated #freepik--character-1--inject-12 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) lightSpeedLeft;animation-delay: 0.6s;opacity: 0}svg#freepik_stories-paper-map.animated #freepik--speech-bubble--inject-12 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) zoomIn;animation-delay: 1.0s;opacity: 0}            @keyframes lightSpeedRight {              from {                transform: translate3d(50%, 0, 0) skewX(-20deg);                opacity: 0;              }              60% {                transform: skewX(10deg);                opacity: 1;              }              80% {                transform: skewX(-2deg);              }              to {                opacity: 1;                transform: translate3d(0, 0, 0);              }            }                    @keyframes lightSpeedLeft {              from {                transform: translate3d(-50%, 0, 0) skewX(20deg);                opacity: 0;              }              60% {                transform: skewX(-10deg);                opacity: 1;              }              80% {                transform: skewX(2deg);              }              to {                opacity: 1;                transform: translate3d(0, 0, 0);              }            }                    @keyframes zoomIn {                0% {                    opacity: 0;                    transform: scale(0.5);                }                100% {                    opacity: 1;                    transform: scale(1);                }            }        .animator-hidden { display: none; }
+
 @media only screen and (max-width: 576px){
-    #contact svg#freepik_stories-take-away {
+    #contact svg#freepik_stories-take-away,
+    #contact svg#freepik_stories-online-groceries {
         display: none;
     }
 }
