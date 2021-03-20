@@ -38,11 +38,11 @@
               <div class=" forthis">
                 <form>
                   <div class="tab-header">
-                    <div class="active">Login</div>
-                    <div id="signup">Register</div>
+                    <div for="login" class="login active">Login</div>
+                    <div for="signup" class="signup">Register</div>
                   </div>  
                   <div class="tab-content">
-                    <div class="tab-body active">
+                    <div action="#" class="login tab-body active">
                         <div class="form-row upper">
                             <div class="form-group column">
                                 <input type="phone-number/email" class="form-control" name="phone-number or email" required autofocus>
@@ -66,10 +66,10 @@
                         </div>
                         <div class="form-element down">
                             <label>Forgot Password ?</label><br>
-                            <label>Don't have an account? Register</label>
+                            <label class="signup-link">Don't have an account? <a href="#" class="link">Register</a></label>
                         </div>
                     </div>
-                    <div class="tab-body">
+                    <div action="#" class="signup tab-body">
                         <div class="form-row upper">
                             <div class="form-group column">
                                 <input type="text" class="form-control" name="first-name" required autofocus>
@@ -102,7 +102,7 @@
                             <button type="submit" class="sm-button">submit</button>
                         </div>
                         <div class="form-element down">
-                            <label>Have an account? Login</label>
+                            <label class="login-link">Have an account? <a href="#" class="link">Login</a></label>
                         </div>
                     </div>
                   </div>
@@ -126,6 +126,22 @@
    });
  }
 </script>
+
+<script>
+  const loginBtn = document.querySelector("div.login");
+  const signupBtn = document.querySelector("div.signup");
+  const loginLink = document.querySelector(".login-link a");
+  const signupLink = document.querySelector(".signup-link a");
+  loginLink.onclick = (()=>{
+    loginBtn.click();
+    return false;
+  });
+  signupLink.onclick = (()=>{
+    signupBtn.click();
+    return false;
+  });
+</script>
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" ></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" ></script>

@@ -236,7 +236,11 @@
         color:#00bfa6;
     }
 
-    /* #contact .tab-header h5{
+    #contact .tab-content .link {
+        color:#00bfa6;
+    }
+
+    /* #contact .tab-header h5 {
         font-size: 1em;
         position: relative;
     } */
