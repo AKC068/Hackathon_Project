@@ -309,20 +309,6 @@
         color:#00bfa6;
     }
 
-    /* #contact .tab-header h5 {
-        font-size: 1em;
-        position: relative;
-    } */
-    /* #contact .tab-header h5.active::after {
-        content: '';
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        height: 2px;
-        background: #00BFA6;
-        width: 100px;
-    } */
 
 
     #contact svg#freepik_stories-take-away,
@@ -352,4 +338,190 @@
     #contact svg#freepik_stories-online-groceries {
         display: none;
     }
+}
+
+
+
+#page {padding: 70px 0;}
+
+.middle {
+    margin: 0 auto;
+}
+@media only screen and (max-width: 576px){
+    .middle {
+        margin: 0 20px;
+    } 
+}
+#page .middle{
+border: 2px solid #00BFA6;
+}
+
+#page .form-row .form-group {
+height: 40px;
+width: 100%;
+position: relative;
+margin-top: 0.8rem;
+}
+
+#page .upper {
+padding-top: 1rem;
+}
+
+#page .form-row .form-group input, 
+#page .form-row .form-group textarea{
+height: 100%;
+width: 100%;
+border: none;
+font-size: 1.0em;
+border-bottom: 2px solid rgba(120, 120, 120, 0.5);
+border-radius: 0px;
+color: #fff;
+}
+
+#page .form-row .form-group textarea {
+height: 100px;
+}
+#page .size {
+height: 100px;
+}
+
+#page .form-group input:focus ~ label,
+#page .form-group input:valid ~ label,
+#page .form-group textarea:focus ~ label,
+#page .form-group textarea:valid ~ label{
+transform: translateY(-25px);
+font-size: 10px;
+color: #00BFA6; 
+text-transform: uppercase;
+font-weight: 600;
+padding-left: 10px;
+}
+
+#page .form-row .form-group label{
+position: absolute;
+bottom: 10px;
+left:0;
+color: rgb(230, 230, 230);
+pointer-events: none;
+transition: all 0.4s ease;
+margin-bottom: 0px;
+padding-left: 15px;
+font-size: 1.0em;
+}
+
+#page .form-row>.column{
+padding: 0 10px;
+}
+#page .form-group .form-control{
+padding: .375rem .375rem;
+background-color: rgba(0,0,0,0);
+}
+#page .form-group .form-control:focus {
+box-shadow: none;
+}
+
+#page .form-row .form-group .gap {top: 98.5px}
+
+#page .form-row .form-group .underline {
+position: absolute;
+bottom: 0px;
+height: 2px;
+width: 96%;
+}
+
+@media only screen and (min-width: 768px){
+#page .form-row .form-group .extra {
+    width: 97.5%; 
+}
+}
+
+#page .form-group .underline::before {
+position: absolute;
+content: "";
+height: 2px;
+width: 100%;
+background: #00BFA6;
+transform: scaleX(0);
+transform-origin: center;
+transition: transform 0.4s ease;
+}
+
+#page .form-group input:focus ~ .underline::before,
+#page .form-group input:valid ~ .underline::before,
+#page .form-group textarea:focus ~ .underline::before,
+#page .form-group textarea:valid ~ .underline::before  {
+transform: scaleX(1);
+border-bottom: none;
+}
+
+#page .btn-sm {
+padding: 1rem 1rem 1.5rem;
+}
+
+#page .sm-button {
+padding: 0.5rem 1rem;
+text-transform:uppercase;
+cursor: pointer;
+background-color: #00BFA6;
+color: #3E3E56;
+border: 2px solid #00BFA6;
+font-weight:600;
+z-index: 100;
+transition: all 0.35s ease;
+width: 100%
+}
+@media only screen and (min-width: 576px){
+#page .sm-button:hover {
+    background-color: #3E3E56;
+    color: #00BFA6;
+    border: 2px solid #00BFA6;
+    font-weight: 500;
+}
+}
+
+#page h5{
+    color: #00BFA6;
+    margin-top: 0.5rem;
+    margin-bottom: 0.4rem;
+    font-size: 1em;
+}
+
+#page .middle .row {
+    padding: 0 1rem;
+}
+
+#page h4{
+    color: #fff;
+    font-size: 0.8rem;
+    /* padding-top: 1rem; */
+}
+
+#page .link {
+    color: #00BFA6;
+}
+#page .middle .below {
+    padding-bottom: 1rem;
+}
+
+.above {
+    margin: 0 auto;
+}
+@media only screen and (max-width: 576px){
+    .above {
+        margin: 0 10px;
+    } 
+}
+.above p{
+    margin: 0.5rem auto;
+    text-align:right;
+    /* font-size: 1em; */
+}
+.above a{
+    color: #fff;
+    transition: all 0.4s ease;
+}
+.above a:hover{
+    color: #00BFA6;
+    transition: all 0.4s ease;
+    text-decoration: none;
 }
