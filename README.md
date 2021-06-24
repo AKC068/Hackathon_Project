@@ -1,3 +1,3 @@
 # Hackathon_Project
     Based on IoT. 
-    Live location tracking project.
+    This is a part of our project on Live location tracking.
